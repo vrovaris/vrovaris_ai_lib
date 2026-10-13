@@ -137,7 +137,7 @@ class Value:
 
         return out
 
-    def relu(self) -> Value | int:
+    def relu(self) -> Value:
         """Return max(0, self). The local derivative at exactly 0 is 0."""
         val = max(0, self.data)
 
